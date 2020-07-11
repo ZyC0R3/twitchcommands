@@ -51,3 +51,12 @@
 
 ### Prime Command 
 !addcom !prime Don't forget you can use your Amazon prime/Twitch prime membership to sub for free!
+
+### How long Command
+!addcom !howlong $(touser) Has Been Following $(channel) On Twitch Since $(customapi http://api.newtimenow.com/follow-length/?channel=$(channel)&user=$(touser))
+
+### Account Created Date
+!adcom !created $(twitch $(user) "The account {{displayName}} was created on the date of: {{createdAt}}")
+
+### Last Tweet
+!addcom !tweet Latest tweet from $(channel): "$(customapi http://api.newtimenow.com/last-tweet/?q=[twitterurl])"
