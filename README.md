@@ -33,3 +33,21 @@
 
 ### Countdown to Weekly Reset
 !addcom !reset Time until next reset: $(countdown $(eval h=17+0;n=new Date();s=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate()+(2-n.getUTCDay())%7,(h%24+24)%24));if(s<n)s.setDate(s.getDate()+7);s.toLocaleTimeString("en-US",{hour12:true,month:"numeric",day:"numeric",year:"numeric"}).replace(/\//g," ").replace(/,/g,"").replace(/(?=\b\d\b)/g,"0")+" "+Intl.DateTimeFormat().resolvedOptions().timeZone))
+
+### Lurk Command
+!addcom !lurk $(user) is lurking in the shadows but still showing the love.
+
+### Bits Command
+!addcom !bits	Bits are a currency on Twitch that are the equivalent to one cent. ($.01) Don't forget that you can support the stream without spending a penny by earning bits from watching ads, and then donating them to the stream!
+
+### Dungeon Report
+!addcom !dr wanna see my dungeon.report? https://dungeon.report/
+
+### Join Command
+!addcom !join My Join code is ??????????????????
+
+### Steam Code Command
+!addcom !steam My Steam code is ?????????
+
+### Prime Command 
+!addcom !prime Don't forget you can use your Amazon prime/Twitch prime membership to sub for free!
